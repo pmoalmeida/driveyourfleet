@@ -1,12 +1,21 @@
 export default {
   items: [
     {
+      name: 'Painel Central',
+      url: '/dashboard',
+      icon: 'icon-speedometer',
+      badge: {
+        variant: 'info',
+        text: 'NOVO',
+      },
+    },
+    {
       title: true,
       name: 'Gestão de frotas'
     },
     {
       name: 'Viaturas',
-      url: '/theme/colors',
+      url: '/vehicles',
       icon: 'icon-basket',
     },
     {
@@ -34,8 +43,8 @@ export default {
       name: 'Gestão de motoristas'
     },
     {
-      name: 'Lista motoristas',
-      url: '/theme/typography',
+      name: 'Motoristas',
+      url: '/drivers',
       icon: 'icon-people',
     },
     {

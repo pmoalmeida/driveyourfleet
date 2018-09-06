@@ -188,6 +188,27 @@ const DfDashboard = Loadable({
   loading: Loading,
 });
 
+const Vehicles = Loadable({
+  loader: () => import('./views/DriveYourFleet/Vehicles/Vehicles'),
+  loading: Loading,
+});
+
+const Vehicle = Loadable({
+  loader: () => import('./views/DriveYourFleet/Vehicles/Vehicle'),
+  loading: Loading,
+});
+
+const Drivers = Loadable({
+  loader: () => import('./views/DriveYourFleet/Drivers/Drivers'),
+  loading: Loading,
+});
+
+const Driver = Loadable({
+  loader: () => import('./views/DriveYourFleet/Drivers/Driver'),
+  loading: Loading,
+});
+
+
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
@@ -232,6 +253,11 @@ const routes = [
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
+  /** Drive Your Fleet */
+  { path: '/vehicles', exact: true,  name: 'Viaturas', component: Vehicles },
+  { path: '/vehicles/:id', exact: true, name: 'Detalhes viatura', component: Vehicle },
+  { path: '/drivers', exact: true,  name: 'Motoristas', component: Drivers },
+  { path: '/drivers/:id', exact: true, name: 'Detalhes motorista', component: Driver },
 ];
 
 export default routes;
