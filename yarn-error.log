@@ -8178,10 +8178,10 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit code: 127
   Command: sh
   Arguments: -c npm-run-all -p watch-css start-js
-  Directory: /Users/pedroalmeida/Projects/driveyourfleet-admin
+  Directory: /Users/pedroalmeida/Projects/Freelancer/driveyourfleet
   Output:
   
       at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
