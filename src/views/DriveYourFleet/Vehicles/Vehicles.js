@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
-
+import { Badge, Card, CardBody, CardHeader, Col, Row, Table, Button} from 'reactstrap';
+import AddVehicle from './AddVehicle';
 import vehiclesData from './VehiclesData';
 
 function VehicleRow (props) {
@@ -28,12 +28,33 @@ function VehicleRow (props) {
 
 class Vehicles extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.addVehicle = this.addVehicle.bind(this);
+    this.state = {
+      isAddVehicleOpen: false
+    };
+  }
+
+  addVehicle() {
+    this.setState({isAddVehicleOpen: !this.state.isAddVehicleOpen});
+  }
+
   render() {
 
     const vehicleList = vehiclesData.filter((vehicle) => vehicle.id < 10)
 
     return (
       <div className="animated fadeIn">
+       {this.state.isAddVehicleOpen && <AddVehicle />}
+        <Button 
+          color="primary" 
+          active={this.state.isAddVehicleOpen} 
+          onClick={this.addVehicle}>
+          Adicionar Viatura
+        </Button>
+        <hr />
         <Row>
           <Col xl={12}>
             <Card>
