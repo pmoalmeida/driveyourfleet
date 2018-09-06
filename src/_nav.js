@@ -17,25 +17,29 @@ export default {
       name: 'Viaturas',
       url: '/vehicles',
       icon: 'icon-basket',
+      badge: {
+        variant: 'success',
+        text: 'NOVO',
+      }
     },
     {
       name: 'Manutenções',
-      url: '/theme/typography',
+   //   url: '/theme/typography',
       icon: 'icon-wrench',
     },
     {
       name: 'Quilómetros',
-      url: '/theme/typography',
+     // url: '/theme/typography',
       icon: 'icon-speedometer',
     },
     {
       name: 'Combustível',
-      url: '/theme/typography',
+     // url: '/theme/typography',
       icon: 'icon-drop',
     },
     {
       name: 'Portagens',
-      url: '/theme/typography',
+    //  url: '/theme/typography',
       icon: 'icon-directions',
     },
     {
@@ -46,6 +50,10 @@ export default {
       name: 'Motoristas',
       url: '/drivers',
       icon: 'icon-people',
+      badge: {
+        variant: 'success',
+        text: 'NOVO',
+      },
     },
     {
       title: true,
@@ -53,12 +61,12 @@ export default {
     },
     {
       name: 'Receitas',
-      url: '/theme/typography',
+    //  url: '/theme/typography',
       icon: 'icon-wallet',
     },
     {
       name: 'Despesas',
-      url: '/theme/typography',
+     // url: '/theme/typography',
       icon: 'icon-wallet',
     },
     {
@@ -67,15 +75,12 @@ export default {
     },
     {
       name: 'Cálculo SEPA',
-      url: '/theme/typography',
+     // url: '/theme/typography',
       icon: 'icon-calculator',
     },
     {
-      divider: true
-    },
-    {
       name: 'Análises e métricas',
-      url: '/theme/typography',
+   //   url: '/theme/typography',
       icon: 'icon-chart',
     },
   ],
